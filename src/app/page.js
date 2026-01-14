@@ -1,6 +1,18 @@
+"use client";
+
+import { useRef } from "react";
+import { ReactLenis } from "lenis/react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Home() {
   return (
     <>
+      <ReactLenis root />
+
       <div>
         <section className="hero">
           <div className="hero-img">
